@@ -1,0 +1,11 @@
+export { default as blog1 } from "./blog1.jpg";
+export { default as blog2 } from "./blog2.jpg";
+export { default as blog3 } from "./blog3.jpg";
+export { default as home1 } from "./home1.jpg";
+export { default as home2 } from "./home2.jpg";
+export { default as home3 } from "./home3.jpg";
+export { default as home4 } from "./home4.jpg";
+export { default as partner } from "./Partner.png";
+export { default as team5 } from "./Team5.jpg";
+export { default as team6 } from "./Team6.jpg";
+export { default as whyus } from "./whyus.jpg";
