@@ -3,15 +3,14 @@ import {
   home2,
   home3,
   home4,
-  blog1,
-  blog2,
-  blog3,
+  // blog1,
+  // blog2,
+  // blog3,
   partner,
-  team5,
-  team6,
+  // team5,
+  // team6,
 } from "../../assets/images";
 import { FaPlay } from "react-icons/fa6";
-
 const Home = () => {
   return (
     <>
@@ -54,11 +53,47 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* === our customers === */}
       <section className="min-h-screen bg-black_bg">
         <h4 className="pt-[128px] text-center text-[32px] font-roboto font-extrabold text-white leading-[120%px]">
           We Have Over <span className="text-icons_bg">230 Satisfied </span>And{" "}
           <br /> Happy Customers.
         </h4>
+        <div className="flex justify-center items-center mt-[32px]">
+          <div className="w-[1440px] bg-green-400 h-[40px]">this</div>
+        </div>
+
+        <div className="flex items-center justify-center">
+          <div className="w-[640px]">
+            <img src={home4} alt="our-experience" className="rounded-3xl" />
+          </div>
+          <div>
+            <h5 className="text-white text-[20px] text-center font-roboto font-semibold">
+              10 Years Of Experience
+            </h5>
+            <h3 className="text-center font-roboto font-extrabold text-[32px] text-white leading-[120%]">
+              Innovation Trust, Our Journey In Securing <br /> Your Tomorrow.
+            </h3>
+            <p className="text-[16px] font-sans text-white leading-[150%] text-center">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla,
+              porro omnis nesciunt assumenda quod et blanditiis minima velit
+              sapiente modi, commodi neque. Minima iure fuga repellat incidunt
+              nihil tenetur dolores.
+            </p>
+            <div className="flex justify-center items-center">
+              <button className="text-white text-[20px] font-roboto rounded-3xl bg-gradient-to-b from-[#55C6AE] to-[#33816C]  px-[24px] py-[16px]">
+                Get Started
+              </button>
+              <div className="flex justify-center items-center">
+                <img src={partner} alt="partners" className="h-[56px]" />
+                <h6 className="text-white font-bold text-[24px]">
+                  20+ Trusted Partner
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );
