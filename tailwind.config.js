@@ -7,7 +7,7 @@ export default {
         icons_bg: "#5cd2b9",
         black_bg: "#181818",
         green_bg: "#1A3832",
-        gray: "#353535",
+        gray: "#181818",
       },
       fontFamily: {
         roboto: ["san-serif", "Roboto"],
