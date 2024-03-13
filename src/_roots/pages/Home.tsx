@@ -8,8 +8,8 @@ import {
   // blog2,
   // blog3,
   partner,
-  // team5,
-  // team6,
+  team5,
+  team6,
 } from "../../assets/images";
 import { Icon1, icon2, icon3, icon4, icon5, icon6 } from "../../assets/icons";
 import { FaPlay } from "react-icons/fa6";
@@ -378,6 +378,60 @@ const Home = () => {
             Here's Our Happy
             <br /> Client Review
           </h4>
+          <div className="flex justify-center items-center max-w-[1440px]">
+            <div>
+              <p className="font-roboto font-normal text-[24px] text-white leading-[150%]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+                vel et libero blanditiis architecto? Amet explicabo quas, alias
+                cumque rerum nulla debitis dolore quod distinctio non placeat
+                officiis quae, necessitatibus repellat incidunt possimus iusto
+                vitae? Iusto eius non qui distinctio.
+              </p>
+              <div className="flex justify-start items-center gap-[32px]">
+                <img
+                  src={team5}
+                  alt="team5"
+                  width={76}
+                  height={76}
+                  className="rounded-full"
+                />
+                <div>
+                  <h6 className="font-roboto text-[20px] text-white font-semibold">
+                    John M
+                  </h6>
+                  <p className="font-roboto font-normal text-white text-[14px] ">
+                    Small Business Owner
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p className="font-roboto font-normal text-[24px] text-white leading-[150%]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
+                nisi adipisci cum quam vitae numquam voluptatibus aperiam ad
+                necessitatibus at? Blanditiis, quam aperiam, quasi explicabo
+                neque, enim non dolore sed a exercitationem id porro voluptatum
+                repellat odio nesciunt adipisci quas.
+              </p>
+              <div className="flex justify-start items-center gap-[16px]">
+                <img
+                  src={team6}
+                  alt="team5"
+                  width={76}
+                  height={76}
+                  className="rounded-full"
+                />
+                <div>
+                  <h6 className="font-roboto font-semibold text-[20px] text-white">
+                    John M
+                  </h6>
+                  <p className="font-roboto font-normal text-[14px] text-white">
+                    Small Business Owner
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
