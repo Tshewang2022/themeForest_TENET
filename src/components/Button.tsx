@@ -1,16 +1,9 @@
-import { TButton } from "../types";
-
-// const Button = ({ children }: Button) => {
-//   // === we can customized the button from here, but we cannot do it from the home.tsx page we have ===
-//   return <div className="">{children}</div>;
-// };
-
-// export default Button;
-
-export default function NButton({ type, autoFocus }: TButton) {
+const Button = () => {
   return (
-    <a type={type} autoFocus={autoFocus}>
-      click me
-    </a>
+    <button className="bg-gradient-to-b from-[#57CAB1] to-[#358570] px-[24px] py-[12px] font-roboto font-normal text-[20px] text-white rounded-xl">
+      Learn More
+    </button>
   );
-}
+};
+
+export default Button;

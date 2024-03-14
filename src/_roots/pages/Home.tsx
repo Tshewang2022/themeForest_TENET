@@ -11,7 +11,8 @@ import {
   team5,
   team6,
 } from "../../assets/images";
-import { Icon1, icon2, icon3, icon4, icon5, icon6 } from "../../assets/icons";
+// import Button from "../../components/Button";
+import { icon1, icon2, icon3, icon4, icon5, icon6 } from "../../assets/icons";
 import { FaPlay } from "react-icons/fa6";
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
 import { GrSecure } from "react-icons/gr";
@@ -26,9 +27,10 @@ const Home = () => {
           </div>
           <div className="mt-[128px] w-full">
             <div className="flex justify-center items-center">
-              <button className="border-2 border-white px-[24px] text-[20px] py-[8px] rounded-full font-medium text-white">
+              <button className="border-2 border-white px-[24px] insert-1 text-[20px] py-[8px] rounded-full font-medium text-white">
                 Cyber Security
               </button>
+              {/* <Button /> */}
             </div>
             <h2 className="text-white font-roboto font-extrabold text-[76px] text-center leading-[120%] my-[32px]">
               Securing Tomorrow's
@@ -109,7 +111,7 @@ const Home = () => {
         <div className=" flex flex-wrap justify-center items-center mt-[32px] mx-[32px] gap-[32px]">
           <div className="flex justify-center items-center max-w-[1440px] gap-[32px]">
             <div className="bg-[#181818] rounded-2xl p-[32px] flex flex-col">
-              <img src={Icon1} alt="icons" className="w-[56px] h-[56px]" />
+              <img src={icon1} alt="icons" className="w-[56px] h-[56px]" />
               <h4 className="text-[24px] font-semibold leading-[150%] py-[12px] text-white">
                 Network Protection
               </h4>
