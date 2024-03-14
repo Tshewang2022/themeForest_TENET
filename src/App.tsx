@@ -8,6 +8,7 @@ import {
   Pages,
   ContactUs,
 } from "./_roots/pages";
+import PageNotFound from "./_roots/pages/PageNotFound";
 const App = () => {
   return (
     <div>
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/pages" element={<Pages />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
     </div>
