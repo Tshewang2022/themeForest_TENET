@@ -58,7 +58,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* === our customers === */}
       <section className="min-h-screen bg-black_bg">
         <h4 className="pt-[128px] text-center text-[32px] font-roboto font-extrabold text-white leading-[120%px]">
@@ -278,7 +277,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
       {/* === trust section === */}
       <section className="bg-[#286A62] min-h-[450px] flex justify-center items-center">
         <div className="flex justify-center items-center">
@@ -427,6 +425,28 @@ const Home = () => {
                   </h6>
                   <p className="font-roboto font-normal text-[14px] text-white">
                     Small Business Owner
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-start items-center">
+          <div className="flex justify-start items-center">
+            <div className="">
+              <div className="flex justify-start gap-[32px]">
+                <div className="">
+                  <h6 className="font-sans font-normal text-white text-[16px] leading-normal">
+                    Blog Post
+                  </h6>
+                  <h2 className="font-roboto font-extrabold text-white text-[48px] max-w-[720px] leading-[120%]">
+                    Read Our Latest Blog & News, Become Current
+                  </h2>
+                </div>
+                <div>
+                  <p className="font-sans font-normal text-[#d5d5d5] text-[14px] align-text-bottom">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Itaque porro ullam tenetur lorem40
                   </p>
                 </div>
               </div>
