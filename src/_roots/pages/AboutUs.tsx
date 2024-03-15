@@ -2,6 +2,7 @@ import { FaPlay } from "react-icons/fa6";
 import { home1, home2, home3, home4 } from "../../assets/images";
 import Button from "../../components/Button";
 import { partner } from "../../assets/images";
+import { cards } from "../../contants";
 const AboutUs = () => {
   return (
     <section className="">
@@ -142,7 +143,42 @@ const AboutUs = () => {
       </div>
 
       {/* === our services === */}
-      <div className="min-h-screen bg-green_bg">Our services</div>
+      <div className="min-h-screen bg-green_bg py-[64px]">
+        <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center mt-[120px]">
+            <div>
+              <h6 className="font-roboto font-normal text-[#5CD2B9] text-[20px] text-center leading-normal mb-[32px]">
+                Our Services
+              </h6>
+              <h2 className="font-roboto font-extrabold text-white text-extrabold text-[46px] leading-[100%] text-center mb-[64px]">
+                CyberArmor Suite, Fortifying Your <br /> Digital Defenses.
+              </h2>
+              <div className="max-w-[1536px]">
+                <div className="flex flex-wrap justify-center gap-[16px] mb-10">
+                  {cards.map((card) => (
+                    <div className="bg-gray p-[64px] max-w-[440px] rounded-[30px]">
+                      <div className="flex items-center justify-start mb-[16px]">
+                        <img
+                          src={card.imgURL}
+                          alt="icons"
+                          className="w-[78px] h-[78px]"
+                        />
+                      </div>
+                      <h4 className="font-roboto font-bold text-[26px] text-white text-start my-[16px]">
+                        {card.title}
+                      </h4>
+                      <p className="font-roboto font-normal text-white text-[16px] leading-[130%] mb-[32px]">
+                        {card.description}
+                      </p>
+                      <Button />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* === Why chooseus === */}
       <div className="min-h-[820px] bg-gray">Why choose us</div>
