@@ -1,8 +1,8 @@
 import { FaPlay } from "react-icons/fa6";
-import { home1, home2, home3, home4 } from "../../assets/images";
+import { home1, home2, home3, home4, whyus } from "../../assets/images";
 import Button from "../../components/Button";
 import { partner } from "../../assets/images";
-import { cards } from "../../contants";
+import { cards, chooseus } from "../../contants";
 const AboutUs = () => {
   return (
     <section className="">
@@ -153,10 +153,10 @@ const AboutUs = () => {
               <h2 className="font-roboto font-extrabold text-white text-extrabold text-[46px] leading-[100%] text-center mb-[64px]">
                 CyberArmor Suite, Fortifying Your <br /> Digital Defenses.
               </h2>
-              <div className="max-w-[1536px]">
-                <div className="flex flex-wrap justify-center gap-[16px] mb-10">
+              <div className="max-w-[1440px]">
+                <div className="flex flex-wrap justify-center gap-[32px] mb-10">
                   {cards.map((card) => (
-                    <div className="bg-gray p-[64px] max-w-[440px] rounded-[30px]">
+                    <div className="bg-gray p-[64px] max-w-[456px] rounded-[30px]">
                       <div className="flex items-center justify-start mb-[16px]">
                         <img
                           src={card.imgURL}
@@ -181,7 +181,69 @@ const AboutUs = () => {
       </div>
 
       {/* === Why chooseus === */}
-      <div className="min-h-[820px] bg-gray">Why choose us</div>
+      <div className="bg-gray py-[120px]">
+        <div className="flex justify-center items-center">
+          <div className="flex justify-between items-center w-[1440px]">
+            <div>
+              <h6 className="font-roboto font-normal text-[20px] text-[#5BC496]">
+                Why Choose Us?
+              </h6>
+              <h2 className="font-roboto font-extrabold text-white text-[56px] max-w-[540px] leading-[100%] my-[16px]">
+                Elevate Your Safety With Our Expertise
+              </h2>
+              <p className="font-roboto font-normal text-white text-[16px] leading-[140%] max-w-[540px] my-[16px]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate atque nihil illum recusandae! Natus sed quod ipsum
+                Lorem ipsum, Dolorum,
+              </p>
+              <div>
+                {chooseus.map((choose) => (
+                  <div className="flex justify-start gap-[32px]">
+                    <div className="my-[8px]">
+                      <img
+                        src={choose.iconsURL}
+                        alt="icons"
+                        className="w-[48px] h-[48px]"
+                      />
+                    </div>
+                    <div className="my-[8px]">
+                      <h2 className="font-roboto font-extrabold text-white text-[24px]">
+                        {choose.title}
+                      </h2>
+                      <p className="font-roboto font-normal text-white text-[16px] leading-[140%] max-w-[540px]">
+                        {choose.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="flex justify-center items-center w-[640px] h-[600px]">
+              <img
+                src={whyus}
+                alt=""
+                className="rounded-[30px] w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* === trust in digital realm */}
+      <div className="flex justify-center items-center bg-[#296C5E]">
+        <div className="my-[16px] bg-[#1B3834] max-w-[540px] rounded-[30px]">
+          <h2 className="text-center pt-[32px] font-roboto font-extrabold text-white text-[56px] leading-[100%]">
+            Bridging <span>Trust</span> In
+            <br /> The Digital Realm
+          </h2>
+          <p className="px-[36px] text-center py-[16px] text-white font-normal font-robot text-[16px]">
+            Lorem ipsum dolor, sit amet consectetur Dignissimos, temporibus?
+          </p>
+          <div className="flex justify-center  pb-[40px]">
+            <Button />
+          </div>
+        </div>
+      </div>
 
       {/* === FAQs === */}
       <div className="min-h-screen bg-gray">FAQs</div>
