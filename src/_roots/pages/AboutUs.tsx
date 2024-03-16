@@ -221,7 +221,7 @@ const AboutUs = () => {
             <div className="flex justify-center items-center w-[640px] h-[600px]">
               <img
                 src={whyus}
-                alt=""
+                alt="whyus"
                 className="rounded-[30px] w-full h-full"
               />
             </div>
@@ -232,7 +232,7 @@ const AboutUs = () => {
       {/* === trust in digital realm */}
       <div className="flex justify-center items-center bg-[#296C5E]">
         <div className="my-[16px] bg-[#1B3834] max-w-[540px] rounded-[30px]">
-          <h2 className="text-center pt-[32px] font-roboto font-extrabold text-white text-[56px] leading-[100%]">
+          <h2 className="text-center pt-[32px] font-roboto font-extrabold text-white text-[56px] leading-[110%]">
             Bridging <span>Trust</span> In
             <br /> The Digital Realm
           </h2>
