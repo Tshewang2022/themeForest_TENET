@@ -2,7 +2,7 @@ import { FaPlay } from "react-icons/fa6";
 import { home1, home2, home3, home4, whyus } from "../../assets/images";
 import Button from "../../components/Button";
 import { partner } from "../../assets/images";
-import { cards, chooseus } from "../../contants";
+import { FAQs, cards, chooseus } from "../../contants";
 const AboutUs = () => {
   return (
     <section className="">
@@ -246,7 +246,33 @@ const AboutUs = () => {
       </div>
 
       {/* === FAQs === */}
-      <div className="min-h-screen bg-gray">FAQs</div>
+      <div className="min-h-screen bg-gray">
+        <div className="flex justify-center items-start gap-[32px]">
+          <div>
+            <h6 className="font-roboto font-normal text-[20px] text-[#5CD2B9]">
+              Frequently Asked Questions
+            </h6>
+            <h2 className="font-roboto font-extrabold text-[56px] text-white leading-[110%]">
+              Here's Our Common <br /> Question We Had So Far
+            </h2>
+            <p className="font-roboto font-normal text-white text-[16px] max-w-[678px]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
+              magnam repellat voluptatibus at provident, ad animi, ipsum impedit
+              suscipit rem iste aliquam necessitatibus. Natus, quae laudantium.
+              Voluptatem totam, modi eaque assumenda iste nesciunt cum ut
+              repudiandae quos vero animi voluptate?
+            </p>
+          </div>
+          <div>
+            {FAQs.map((faq) => (
+              <div className="py-[16px] px-[32px] bg-[#353535] rounded-[20px] max-w-[768px] mb-[16px]">
+                <h6>{faq.title}</h6>
+                <div>{faq.description}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* === Blog post === */}
       <div>Blog post</div>
