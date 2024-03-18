@@ -390,9 +390,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-
-      {/* === Blog post === */}
-      <div>Blog post</div>
+      {/* === footer sections === */}
     </section>
   );
 };
