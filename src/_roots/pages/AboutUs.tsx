@@ -3,6 +3,7 @@ import { home1, home2, home3, home4, whyus } from "../../assets/images";
 import Button from "../../components/Button";
 import { partner } from "../../assets/images";
 import { FAQs, blogs, cards, chooseus, ourclients } from "../../contants";
+import { FaFolderOpen } from "react-icons/fa";
 const AboutUs = () => {
   return (
     <section className="">
@@ -344,6 +345,8 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
+
+        {/* === blog post === */}
         <div className="flex justify-center items-center py-[128px]">
           <div className="flex justify-center items-center max-w-[1440px]">
             <div>
@@ -373,9 +376,15 @@ const AboutUs = () => {
                       className="rounded-t-[20px]"
                     />
                     <div className="p-[32px]">
-                      <h6 className="font-roboto font-normal text-[16px] text-[#717171] pb-[32px]">
-                        {blog.icons_description}
-                      </h6>
+                      <div className="flex justify-start items-center gap-[16px] mb-[32px]">
+                        <FaFolderOpen
+                          className="w-[24px] h-[24px]"
+                          color="#717171"
+                        />
+                        <h6 className="font-roboto font-normal text-[16px] text-[#717171]">
+                          {blog.icons_description}
+                        </h6>
+                      </div>
                       <h2 className="font-roboto font-extrabold text-white text-[24px] leading-[140%] pb-[16px]">
                         {blog.title}
                       </h2>
@@ -390,7 +399,6 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      {/* === footer sections === */}
     </section>
   );
 };
