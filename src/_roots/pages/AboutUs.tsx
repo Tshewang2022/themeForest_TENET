@@ -2,7 +2,7 @@ import { FaPlay, FaAngleDown } from "react-icons/fa6";
 import { home1, home2, home3, home4, whyus } from "../../assets/images";
 import Button from "../../components/Button";
 import { partner } from "../../assets/images";
-import { FAQs, cards, chooseus } from "../../contants";
+import { FAQs, blogs, cards, chooseus, ourclients } from "../../contants";
 const AboutUs = () => {
   return (
     <section className="">
@@ -304,6 +304,87 @@ const AboutUs = () => {
               <div className="flex justify-start items-center gap-[32px]">
                 <Button />
                 <Button />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-center items-center pt-[128px]">
+          <div className="max-w-[1440px]">
+            <h6 className="font-roboto font-normal text-[20px] text-[#5CD2B9] text-center">
+              Testimonial
+            </h6>
+            <h2 className="font-roboto font-extrabold text-white text-[56px] text-center leading-[100%]">
+              Here's Our Happy <br /> Client Review
+            </h2>
+            <div className="flex justify-between items-center mt-[64px]">
+              <div className="flex justify-center items-center gap-[16px]">
+                {ourclients.map((client) => (
+                  <div>
+                    <h5 className="font-roboto font-normal text-white text-[24px] leading-[160%]">
+                      {client.description}
+                    </h5>
+                    <div className="flex justify-start items-center gap-[16px]">
+                      <img
+                        src={client.imgURL}
+                        alt="image"
+                        className="w-[96px] h-[96px] rounded-full"
+                      />
+                      <div>
+                        <h4 className="font-roboto text-[#5CD2B9] text-[20px] leading-normal ">
+                          {client.name}
+                        </h4>
+                        <h5 className="font-roboto text-white text-[20px] leading-normal">
+                          {client.designation}
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-center items-center py-[128px]">
+          <div className="flex justify-center items-center max-w-[1440px]">
+            <div>
+              <div className="flex justify-between items-end gap-[32px] mb-[64px]">
+                <div>
+                  <h6 className="font-roboto font-normal text-[20px] text-[#5CD2B9]">
+                    Blog Post
+                  </h6>
+                  <h2 className="font-roboto font-extrabold text-white text-[56px] leading-[120%] max-w-[768px]">
+                    Read Our Latest Blog & News, Become Current
+                  </h2>
+                </div>
+                <div>
+                  <p className="font-roboto font-normal text-white text-[16px] leading-[150%]">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Qui perferendis laborum tempore voluptatum repellat
+                    veritatis accusantium quasi sed alias in.
+                  </p>
+                </div>
+              </div>
+              <div className="flex gap-[32px] justify-center items-center">
+                {blogs.map((blog) => (
+                  <div className="bg-[#353535] rounded-[20px] mmax-w-[320px]">
+                    <img
+                      src={blog.imgURL}
+                      alt="blogs"
+                      className="rounded-t-[20px]"
+                    />
+                    <div className="p-[32px]">
+                      <h6 className="font-roboto font-normal text-[16px] text-[#717171] pb-[32px]">
+                        {blog.icons_description}
+                      </h6>
+                      <h2 className="font-roboto font-extrabold text-white text-[24px] leading-[140%] pb-[16px]">
+                        {blog.title}
+                      </h2>
+                      <p className="font-roboto font-normal text-[#717171] text-[16px] pb-[32px]">
+                        {blog.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
