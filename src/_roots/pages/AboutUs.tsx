@@ -1,4 +1,4 @@
-import { FaPlay } from "react-icons/fa6";
+import { FaPlay, FaAngleDown } from "react-icons/fa6";
 import { home1, home2, home3, home4, whyus } from "../../assets/images";
 import Button from "../../components/Button";
 import { partner } from "../../assets/images";
@@ -246,8 +246,8 @@ const AboutUs = () => {
       </div>
 
       {/* === FAQs === */}
-      <div className="min-h-screen bg-gray">
-        <div className="flex justify-center items-start gap-[32px]">
+      <div className="min-h-screen bg-gray pt-[120px]">
+        <div className="flex justify-center items-start gap-[16px]">
           <div>
             <h6 className="font-roboto font-normal text-[20px] text-[#5CD2B9]">
               Frequently Asked Questions
@@ -265,11 +265,47 @@ const AboutUs = () => {
           </div>
           <div>
             {FAQs.map((faq) => (
-              <div className="py-[16px] px-[32px] bg-[#353535] rounded-[20px] max-w-[768px] mb-[16px]">
-                <h6>{faq.title}</h6>
-                <div>{faq.description}</div>
+              <div className=" max-w-[768px] mb-[16px]">
+                <div className="flex justify-between items-center bg-[#353535] rounded-[20px] mb-[8px] py-[32px] px-[32px]">
+                  <h6 className="font-roboto font-semibold text-white text-[20px] leading-[120%] ">
+                    {faq.title}
+                  </h6>
+                  <FaAngleDown className="w-[32px] h-[32px]" color="white" />
+                </div>
+                <div className="mx-[64px]">
+                  <p className="font-roboto font-normal text-white text-[16px] leading-[130%] hidden">
+                    {faq.description}
+                  </p>
+                </div>
               </div>
             ))}
+          </div>
+        </div>
+        <div className="flex justify-center items-center mt-[64px]">
+          <div className="flex justify-between items-center max-w-[1440px] bg-gradient-to-b from-[#2D745F] to-[#0B2921] rounded-[30px] p-[64px] gap-[32px]">
+            <div className="max-w-[720px]">
+              <h6 className="font-roboto font-normal text-white text-[20px] leading-normal ">
+                Get Your Free Consultation Now!
+              </h6>
+              <h2 className="font-roboto font-extrabold text-white text-[56px] leading-[100%] ">
+                Best
+                <span className="text-[#5CD2B9]"> Solutions </span> For Your
+                Security Problems Of Network
+              </h2>
+            </div>
+            <div className="max-w-[720px]">
+              <p className="font-roboto font-normal text-white text-[16px] leading-[130%] py-[16px]">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
+                neque molestias, consequuntur sapiente ratione iusto sit nobis
+                quas quaerat quo recusandae mollitia ea porro dolorem totam
+                aliquam. Est voluptatibus corrupti unde officiis soluta alias
+                libero vel consectetur saepe, cupiditate delectus.
+              </p>
+              <div className="flex justify-start items-center gap-[32px]">
+                <Button />
+                <Button />
+              </div>
+            </div>
           </div>
         </div>
       </div>
