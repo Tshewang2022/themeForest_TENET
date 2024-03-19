@@ -4,12 +4,24 @@ import Button from "../../components/Button";
 import { partner } from "../../assets/images";
 import { FAQs, blogs, cards, chooseus, ourclients } from "../../contants";
 import { FaFolderOpen } from "react-icons/fa";
+import { useRef } from "react";
+// import { ScrollParallax } from "react-just-parallax";
+// import { motion, useScroll } from "framer-motion";
 const AboutUs = () => {
+  const ref = useRef(null);
+  // const { scrollYProgress } = useScroll({
+  //   target: ref,
+  //   offset: ["end end", "start start"],
+  // });
   return (
     <section className="">
       {/* === hero sections === */}
-      <div className="min-h-screen bg-gradient-to-r from-[#1C2D2A] via-[#347166] to-[#1C2D2A]">
-        <div className="flex  items-center justify-between absolute bottom-0 w-full ">
+      <div
+        className="min-h-screen bg-gradient-to-r from-[#1C2D2A] via-[#347166] to-[#1C2D2A] "
+        ref={ref}
+      >
+        <div className="flex items-center justify-between absolute bottom-0 w-full ">
+          {/* <ScrollParallax> */}
           <div className="flex justify-center items-center ">
             <img
               src={home1}
@@ -18,6 +30,7 @@ const AboutUs = () => {
               className="rounded-[30px]"
             />
           </div>
+          {/* </ScrollParallax> */}
           <div>
             <div className="flex justify-center items-center mb-[32px]">
               <button className="font-roboto font-medium text-[20px] text-white border-2 border-white rounded-[30px] px-[24px] py-[12px]">
@@ -42,6 +55,7 @@ const AboutUs = () => {
               />
             </div>
           </div>
+          {/* <ScrollParallax> */}
           <div className="flex justify-center items-center">
             <img
               src={home3}
@@ -50,6 +64,7 @@ const AboutUs = () => {
               className="rounded-[30px]"
             />
           </div>
+          {/* </ScrollParallax> */}
         </div>
       </div>
 
@@ -375,7 +390,7 @@ const AboutUs = () => {
                       alt="blogs"
                       className="rounded-t-[20px]"
                     />
-                    <div className="p-[32px]">
+                    <div className="px-[46px] pt-[32px] pb-[40px]">
                       <div className="flex justify-start items-center gap-[16px] mb-[32px]">
                         <FaFolderOpen
                           className="w-[24px] h-[24px]"
